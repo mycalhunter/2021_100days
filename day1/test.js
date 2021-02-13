@@ -1,1 +1,1 @@
-// initial commit
+// initial commit setting up GitHub on VS Code
