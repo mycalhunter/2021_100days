@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>100 Days of Code</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="days">
+    <script>
+        let body = document.querySelector("#days");
+        let arr = [
+            {id:1,title:"Check number between a range",lang:"Javascript"},
+        ];
+        for (i = 0; i < arr.length; i++) {
+            body.insertAdjacentHTML('beforeend', '<a href="./day'+arr[i].id+'/" title="View: '+arr[i].title+'"><div id="day_'+arr[i].id+'"><div class="date">'+arr[i].id+'</div><p style="margin-top:0;">'+arr[i].title+'</p><div class="lang">Language: '+arr[i].lang+'</div></div></a>');
+        }
+    </script>
+</body>
+</html>
